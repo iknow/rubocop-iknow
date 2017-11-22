@@ -1,0 +1,108 @@
+---
+AllCops:
+  TargetRubyVersion: 2.4
+Metrics/LineLength:
+  # Max: 100
+  Enabled: false # Potentially bring this back later
+Metrics/BlockLength:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/BlockDelimiters:
+  Enabled: false
+Style/RedundantReturn:
+  Enabled: false
+Style/RedundantSelf:
+  Enabled: false
+Style/GuardClause:
+  Enabled: false
+Style/IfUnlessModifier:
+  Enabled: false
+Style/RaiseArgs:
+  Enabled: false
+Style/RedundantException:
+  Enabled: false
+Style/SpecialGlobalVars:
+  Enabled: false
+Metrics/AbcSize:
+  Enabled: false
+Metrics/MethodLength:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Metrics/PerceivedComplexity:
+  Enabled: false
+Metrics/ClassLength:
+  Enabled: false
+Style/Lambda:
+  Enabled: false
+Style/LambdaCall:
+  Enabled: false
+Style/MultilineBlockChain:
+  Enabled: false
+Style/WordArray:
+  Enabled: false
+Style/SymbolArray:
+  Enabled: false
+Performance/RedundantBlockCall:
+  Enabled: false
+Style/PreferredHashMethods:
+  EnforcedStyle: verbose
+Metrics/ParameterLists:
+  Enabled: false
+Layout/MultilineMethodCallIndentation:
+  # Cannot be configured to indent relative to expression.
+  Enabled: false
+Style/RescueModifier:
+  # I can see valid uses for this but they're far and few between.
+  # That said, nobody in our team is going to use one of these unless
+  # it's a valid case
+  Enabled: false
+Lint/UnusedMethodArgument:
+  AllowUnusedKeywordArguments: true
+  IgnoreEmptyMethods: true
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/NonNilCheck:
+  Enabled: false
+Style/HashSyntax:
+  # We explicitly choose to use rocket style syntax when the Hash is being used
+  # to represent some other sort of data structure (trees, pairs, etc).
+  Enabled: false
+Performance/RedundantMerge:
+  # The syntactic overhead of this isn't always worth it. Keep an eye on
+  # performance yourself.
+  Enabled: false
+Style/BracesAroundHashParameters:
+  # This rule prevents distinguishing between keyword arguments and a hash
+  # parameter.
+  Enabled: false
+Layout/FirstParameterIndentation:
+  # This forbids indentation relative to the expression
+  Enabled: false
+Style/SafeNavigation:
+  Enabled: false
+Layout/EmptyLinesAroundExceptionHandlingKeywords:
+  Enabled: false
+
+Style/StringLiterals:
+  # Use single quote unless escaping: we may want this rule?
+  Enabled: false
+Style/StringLiteralsInInterpolation:
+  # Match whatever we select for the above
+  Enabled: false
+
+Lint/ShadowingOuterLocalVariable:
+  # I like this rule, but can see arguments against it
+  Enabled: true
+
+# Rules for formatting hash and method call braces: let's avoid these unless we
+# can find something unambiguously positive.
+Layout/MultilineMethodCallBraceLayout:
+  Enabled: false
+Layout/MultilineHashBraceLayout:
+  Enabled: false
+Layout/IndentHash:
+  # This one in particular forbids what Emacs does by default for multi-line
+  # hash entries
+  Enabled: false
