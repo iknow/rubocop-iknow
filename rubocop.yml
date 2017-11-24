@@ -84,6 +84,14 @@ Style/SafeNavigation:
   Enabled: false
 Layout/EmptyLinesAroundExceptionHandlingKeywords:
   Enabled: false
+Layout/SpaceInsideRangeLiteral:
+  Enabled: false
+Style/SymbolProc:
+  Enabled: false
+Lint/ParenthesesAsGroupedExpression:
+  Enabled: false
+Style/EmptyElse:
+  Enabled: false
 
 Style/StringLiterals:
   # Use single quote unless escaping: we may want this rule?
