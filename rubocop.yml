@@ -61,6 +61,8 @@ Style/RescueModifier:
 Lint/UnusedMethodArgument:
   AllowUnusedKeywordArguments: true
   IgnoreEmptyMethods: true
+Lint/AmbiguousBlockAssociation:
+  Enabled: false
 Style/ClassAndModuleChildren:
   Enabled: false
 Style/NonNilCheck:
@@ -93,6 +95,10 @@ Lint/ParenthesesAsGroupedExpression:
 Style/EmptyElse:
   Enabled: false
 Style/NumericLiterals:
+  Enabled: false
+Style/TrailingCommaInLiteral:
+  EnforcedStyleForMultiline: comma
+Style/SymbolLiteral:
   Enabled: false
 
 Style/StringLiterals:
