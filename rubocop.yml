@@ -1,6 +1,6 @@
 ---
 AllCops:
-  TargetRubyVersion: 2.4
+  TargetRubyVersion: 2.5
 Metrics/LineLength:
   # Max: 100
   Enabled: false # Potentially bring this back later
@@ -24,6 +24,8 @@ Style/RedundantException:
   Enabled: false
 Style/SpecialGlobalVars:
   Enabled: false
+Style/EmptyCaseCondition:
+  Enabled: false
 Metrics/AbcSize:
   Enabled: false
 Metrics/MethodLength:
@@ -33,6 +35,8 @@ Metrics/CyclomaticComplexity:
 Metrics/PerceivedComplexity:
   Enabled: false
 Metrics/ClassLength:
+  Enabled: false
+Metrics/ModuleLength:
   Enabled: false
 Style/Lambda:
   Enabled: false
@@ -61,8 +65,6 @@ Style/RescueModifier:
 Lint/UnusedMethodArgument:
   AllowUnusedKeywordArguments: true
   IgnoreEmptyMethods: true
-Lint/AmbiguousBlockAssociation:
-  Enabled: false
 Style/ClassAndModuleChildren:
   Enabled: false
 Style/NonNilCheck:
@@ -96,9 +98,13 @@ Style/EmptyElse:
   Enabled: false
 Style/NumericLiterals:
   Enabled: false
+Style/NumericPredicate:
+  Enabled: false
 Style/TrailingCommaInLiteral:
   EnforcedStyleForMultiline: comma
 Style/SymbolLiteral:
+  Enabled: false
+Naming/AccessorMethodName:
   Enabled: false
 
 Style/StringLiterals:
@@ -106,6 +112,11 @@ Style/StringLiterals:
   Enabled: false
 Style/StringLiteralsInInterpolation:
   # Match whatever we select for the above
+  Enabled: false
+
+Lint/AmbiguousBlockAssociation:
+  # In practise this rule seems overly restrictive for
+  # DSLs like RSpec that avoid parens.
   Enabled: false
 
 Lint/ShadowingOuterLocalVariable:
