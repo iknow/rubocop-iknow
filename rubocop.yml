@@ -100,7 +100,9 @@ Style/NumericLiterals:
   Enabled: false
 Style/NumericPredicate:
   Enabled: false
-Style/TrailingCommaInLiteral:
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: comma
 Style/SymbolLiteral:
   Enabled: false
