@@ -19,7 +19,7 @@ Style/GuardClause:
 Style/IfUnlessModifier:
   Enabled: false
 Style/RaiseArgs:
-  Enabled: false
+  EnforcedStyle: compact
 Style/RedundantException:
   Enabled: false
 Style/SpecialGlobalVars:
