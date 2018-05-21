@@ -18,6 +18,8 @@ Style/GuardClause:
   Enabled: false
 Style/IfUnlessModifier:
   Enabled: false
+Style/WhileUntilModifier:
+  Enabled: false
 Style/RaiseArgs:
   EnforcedStyle: compact
 Style/RedundantException:
@@ -104,17 +106,35 @@ Style/TrailingCommaInArrayLiteral:
   EnforcedStyleForMultiline: comma
 Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: comma
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
 Style/SymbolLiteral:
   Enabled: false
 Naming/AccessorMethodName:
   Enabled: false
+Naming/UncommunicativeMethodParamName:
+  Enabled: false
+Naming/VariableNumber:
+  Enabled: false
+Lint/SplatKeywordArguments:
+  Enabled: false
+Style/SingleLineMethods:
+  Enabled: false
+Style/CommentedKeyword:
+  Enabled: false
+
+Style/ClassVars:
+  # Class vars are usually bad practice. Not universally.
+  Enabled: false
+
+Layout/MultilineMethodDefinitionBraceLayout:
+  # None of their options are lovely
+  Enabled: false
 
 Style/StringLiterals:
-  # Use single quote unless escaping: we may want this rule?
-  Enabled: false
+  Enabled: true
 Style/StringLiteralsInInterpolation:
-  # Match whatever we select for the above
-  Enabled: false
+  Enabled: true
 
 Lint/AmbiguousBlockAssociation:
   # In practise this rule seems overly restrictive for
