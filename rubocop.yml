@@ -10,6 +10,8 @@ Style/Documentation:
   Enabled: false
 Style/BlockDelimiters:
   Enabled: false
+Style/TernaryParentheses:
+  Enabled: false
 Style/RedundantReturn:
   Enabled: false
 Style/RedundantSelf:
