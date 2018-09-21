@@ -30,6 +30,8 @@ Style/SpecialGlobalVars:
   Enabled: false
 Style/EmptyCaseCondition:
   Enabled: false
+Style/UnneededCondition:
+  Enabled: false
 Metrics/AbcSize:
   Enabled: false
 Metrics/MethodLength:
