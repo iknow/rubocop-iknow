@@ -71,6 +71,8 @@ Style/RescueModifier:
 Lint/UnusedMethodArgument:
   AllowUnusedKeywordArguments: true
   IgnoreEmptyMethods: true
+Lint/EmptyWhen:
+  Enabled: false
 Style/ClassAndModuleChildren:
   Enabled: false
 Style/NonNilCheck:
