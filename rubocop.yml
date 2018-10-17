@@ -124,8 +124,6 @@ Naming/VariableNumber:
   Enabled: false
 Naming/PredicateName:
   NamePrefix: ['is_']
-Lint/SplatKeywordArguments:
-  Enabled: false
 Style/SingleLineMethods:
   Enabled: false
 Style/CommentedKeyword:
