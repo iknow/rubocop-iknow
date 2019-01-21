@@ -129,6 +129,10 @@ Style/SingleLineMethods:
 Style/CommentedKeyword:
   Enabled: false
 
+Layout/AlignHash:
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
+
 Style/ClassVars:
   # Class vars are usually bad practice. Not universally.
   Enabled: false
