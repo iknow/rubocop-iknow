@@ -54,8 +54,6 @@ Style/WordArray:
   Enabled: false
 Style/SymbolArray:
   Enabled: false
-Performance/RedundantBlockCall:
-  Enabled: false
 Style/PreferredHashMethods:
   EnforcedStyle: verbose
 Metrics/ParameterLists:
@@ -80,10 +78,6 @@ Style/NonNilCheck:
 Style/HashSyntax:
   # We explicitly choose to use rocket style syntax when the Hash is being used
   # to represent some other sort of data structure (trees, pairs, etc).
-  Enabled: false
-Performance/RedundantMerge:
-  # The syntactic overhead of this isn't always worth it. Keep an eye on
-  # performance yourself.
   Enabled: false
 Style/BracesAroundHashParameters:
   # This rule prevents distinguishing between keyword arguments and a hash
