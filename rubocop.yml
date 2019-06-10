@@ -124,8 +124,14 @@ Style/CommentedKeyword:
   Enabled: false
 
 Layout/AlignHash:
-  EnforcedHashRocketStyle: table
-  EnforcedColonStyle: table
+  Enabled: false
+  # Until the following is permitted (PR #6649)
+  # EnforcedHashRocketStyle:
+  #   - table
+  #   - key
+  # EnforcedColonStyle:
+  #   - table
+  #   - key
 
 Style/ClassVars:
   # Class vars are usually bad practice. Not universally.
