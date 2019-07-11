@@ -6,6 +6,8 @@ Metrics/LineLength:
   Enabled: false # Potentially bring this back later
 Metrics/BlockLength:
   Enabled: false
+Style/AsciiComments:
+  Enabled: false
 Style/Documentation:
   Enabled: false
 Style/BlockDelimiters:
@@ -103,7 +105,7 @@ Style/NumericLiterals:
 Style/NumericPredicate:
   Enabled: false
 Style/TrailingCommaInArrayLiteral:
-  EnforcedStyleForMultiline: comma
+  EnforcedStyleForMultiline: consistent_comma
 Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: comma
 Style/TrailingCommaInArguments:
