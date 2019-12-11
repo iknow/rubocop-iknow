@@ -85,7 +85,7 @@ Style/BracesAroundHashParameters:
   # This rule prevents distinguishing between keyword arguments and a hash
   # parameter.
   Enabled: false
-Layout/IndentFirstArgument:
+Layout/FirstArgumentIndentation:
   # This forbids indentation relative to the expression
   Enabled: false
 Style/SafeNavigation:
@@ -114,7 +114,7 @@ Style/SymbolLiteral:
   Enabled: false
 Naming/AccessorMethodName:
   Enabled: false
-Naming/UncommunicativeMethodParamName:
+Naming/MethodParameterName:
   Enabled: false
 Naming/VariableNumber:
   Enabled: false
@@ -125,7 +125,7 @@ Style/SingleLineMethods:
 Style/CommentedKeyword:
   Enabled: false
 
-Layout/AlignHash:
+Layout/HashAlignment:
   EnforcedHashRocketStyle:
     - table
     - key
@@ -161,7 +161,7 @@ Layout/MultilineMethodCallBraceLayout:
   Enabled: false
 Layout/MultilineHashBraceLayout:
   Enabled: false
-Layout/IndentFirstHashElement:
+Layout/FirstHashElementIndentation:
   # This one in particular forbids what Emacs does by default for multi-line
   # hash entries
   Enabled: false
