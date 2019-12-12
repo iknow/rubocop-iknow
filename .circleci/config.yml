@@ -1,0 +1,41 @@
+version: 2.1
+
+executors:
+  ruby:
+    parameters:
+      ruby-version:
+        type: string
+        default: "2.6"
+      gemfile:
+        type: string
+        default: "Gemfile"
+    docker:
+      - image: circleci/ruby:<< parameters.ruby-version >>
+
+jobs:
+  publish:
+    executor: ruby
+    steps:
+       - checkout
+       - run:
+           name: Setup Rubygems
+           command: |
+             mkdir ~/.gem &&
+             echo -e "---\r\n:rubygems_api_key: $RUBYGEMS_API_KEY" > ~/.gem/credentials &&
+             chmod 0600 ~/.gem/credentials
+       - run:
+           name: Publish to Rubygems
+           command: |
+             gem build rubocop-iknow.gemspec
+             gem push rubocop-iknow-*.gem
+
+workflows:
+  version: 2.1
+  build:
+    jobs:
+      - publish:
+          filters:
+            branches:
+              only: master
+            tags:
+              ignore: /.*/
