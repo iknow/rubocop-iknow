@@ -81,6 +81,12 @@ Style/HashSyntax:
   # We explicitly choose to use rocket style syntax when the Hash is being used
   # to represent some other sort of data structure (trees, pairs, etc).
   Enabled: false
+Style/HashEachMethods:
+  Enabled: true
+Style/HashTransformKeys:
+  Enabled: true
+Style/HashTransformValues:
+  Enabled: true
 Layout/FirstArgumentIndentation:
   # This forbids indentation relative to the expression
   Enabled: false
