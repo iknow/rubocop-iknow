@@ -1,7 +1,7 @@
 ---
 AllCops:
   TargetRubyVersion: 2.5
-Metrics/LineLength:
+Layout/LineLength:
   # Max: 100
   Enabled: false # Potentially bring this back later
 Metrics/BlockLength:
@@ -72,6 +72,10 @@ Lint/UnusedMethodArgument:
   AllowUnusedKeywordArguments: true
   IgnoreEmptyMethods: true
 Lint/EmptyWhen:
+  Enabled: false
+Lint/RaiseException:
+  Enabled: true
+Lint/StructNewOverride:
   Enabled: false
 Style/ClassAndModuleChildren:
   Enabled: false
