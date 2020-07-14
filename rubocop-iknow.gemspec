@@ -2,8 +2,8 @@
 
 Gem::Specification.new do |s|
   s.name     = 'rubocop-iknow'
-  s.version  = '0.0.5'
-  s.date     = '2020-03-03'
+  s.version  = '0.0.6'
+  s.date     = '2020-07-14'
   s.summary  = 'Rubocop Configuration used with iKnow Projects'
   s.authors  = ['iKnow Team']
   s.email    = 'edge@iknow.jp'
