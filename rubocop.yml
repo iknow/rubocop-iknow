@@ -1,6 +1,7 @@
 ---
 AllCops:
   TargetRubyVersion: 2.5
+  NewCops: enable
 Layout/LineLength:
   # Max: 100
   Enabled: false # Potentially bring this back later
