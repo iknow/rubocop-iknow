@@ -69,6 +69,11 @@ Style/RescueModifier:
   # That said, nobody in our team is going to use one of these unless
   # it's a valid case
   Enabled: false
+Style/ExplicitBlockArgument:
+  # This goes too far by demanding expensive block allocation always
+  Enabled: false
+Lint/UnusedBlockArgument:
+  AllowUnusedKeywordArguments: true
 Lint/UnusedMethodArgument:
   AllowUnusedKeywordArguments: true
   IgnoreEmptyMethods: true
@@ -117,7 +122,16 @@ Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: comma
 Style/TrailingCommaInArguments:
   EnforcedStyleForMultiline: comma
+Style/TrailingUnderscoreVariable:
+  # I think this does more harm than good by hiding the array destructuring
+  Enabled: false
 Style/SymbolLiteral:
+  Enabled: false
+Style/KeywordParametersOrder:
+  Enabled: false
+Style/StringConcatenation:
+  Enabled: false
+Style/AccessorGrouping:
   Enabled: false
 Naming/AccessorMethodName:
   Enabled: false
