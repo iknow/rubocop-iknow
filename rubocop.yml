@@ -1,190 +1,265 @@
----
 AllCops:
   TargetRubyVersion: 2.5
   NewCops: enable
-Layout/LineLength:
-  # Max: 100
-  Enabled: false # Potentially bring this back later
-Metrics/BlockLength:
+
+Layout/EmptyLinesAroundExceptionHandlingKeywords:
   Enabled: false
-Style/AsciiComments:
-  Enabled: false
-Style/Documentation:
-  Enabled: false
-Style/BlockDelimiters:
-  Enabled: false
-Style/TernaryParentheses:
-  Enabled: false
-Style/RedundantReturn:
-  Enabled: false
-Style/RedundantSelf:
-  Enabled: false
-Style/GuardClause:
-  Enabled: false
-Style/IfUnlessModifier:
-  Enabled: false
-Style/WhileUntilModifier:
-  Enabled: false
-Style/RaiseArgs:
-  EnforcedStyle: compact
-Style/RedundantException:
-  Enabled: false
-Style/SpecialGlobalVars:
-  Enabled: false
-Style/EmptyCaseCondition:
-  Enabled: false
-Style/RedundantCondition:
-  Enabled: false
-Metrics/AbcSize:
-  Enabled: false
-Metrics/MethodLength:
-  Enabled: false
-Metrics/CyclomaticComplexity:
-  Enabled: false
-Metrics/PerceivedComplexity:
-  Enabled: false
-Metrics/ClassLength:
-  Enabled: false
-Metrics/ModuleLength:
-  Enabled: false
-Style/Lambda:
-  Enabled: false
-Style/LambdaCall:
-  Enabled: false
-Style/MultilineBlockChain:
-  Enabled: false
-Style/WordArray:
-  Enabled: false
-Style/SymbolArray:
-  Enabled: false
-Style/PreferredHashMethods:
-  EnforcedStyle: verbose
-Metrics/ParameterLists:
-  Enabled: false
-Layout/MultilineMethodCallIndentation:
-  # Cannot be configured to indent relative to expression.
-  Enabled: false
-Style/RescueModifier:
-  # I can see valid uses for this but they're far and few between.
-  # That said, nobody in our team is going to use one of these unless
-  # it's a valid case
-  Enabled: false
-Style/ExplicitBlockArgument:
-  # This goes too far by demanding expensive block allocation always
-  Enabled: false
-Lint/UnusedBlockArgument:
-  AllowUnusedKeywordArguments: true
-Lint/UnusedMethodArgument:
-  AllowUnusedKeywordArguments: true
-  IgnoreEmptyMethods: true
-Lint/EmptyWhen:
-  Enabled: false
-Lint/RaiseException:
-  Enabled: true
-Lint/StructNewOverride:
-  Enabled: false
-Style/ClassAndModuleChildren:
-  Enabled: false
-Style/NonNilCheck:
-  Enabled: false
-Style/HashSyntax:
-  # We explicitly choose to use rocket style syntax when the Hash is being used
-  # to represent some other sort of data structure (trees, pairs, etc).
-  Enabled: false
-Style/HashEachMethods:
-  Enabled: true
-Style/HashTransformKeys:
-  Enabled: true
-Style/HashTransformValues:
-  Enabled: true
+
 Layout/FirstArgumentIndentation:
   # This forbids indentation relative to the expression
   Enabled: false
-Style/SafeNavigation:
-  Enabled: false
-Layout/EmptyLinesAroundExceptionHandlingKeywords:
-  Enabled: false
-Layout/SpaceInsideRangeLiteral:
-  Enabled: false
-Style/SymbolProc:
-  Enabled: false
-Lint/ParenthesesAsGroupedExpression:
-  Enabled: false
-Style/EmptyElse:
-  Enabled: false
-Style/NumericLiterals:
-  Enabled: false
-Style/NumericPredicate:
-  Enabled: false
-Style/TrailingCommaInArrayLiteral:
-  EnforcedStyleForMultiline: consistent_comma
-Style/TrailingCommaInHashLiteral:
-  EnforcedStyleForMultiline: comma
-Style/TrailingCommaInArguments:
-  EnforcedStyleForMultiline: comma
-Style/TrailingUnderscoreVariable:
-  # I think this does more harm than good by hiding the array destructuring
-  Enabled: false
-Style/SymbolLiteral:
-  Enabled: false
-Style/KeywordParametersOrder:
-  Enabled: false
-Style/StringConcatenation:
-  Enabled: false
-Style/AccessorGrouping:
-  Enabled: false
-Naming/AccessorMethodName:
-  Enabled: false
-Naming/MethodParameterName:
-  Enabled: false
-Naming/VariableNumber:
-  Enabled: false
-Naming/PredicateName:
-  NamePrefix: ['is_']
-Naming/RescuedExceptionsVariableName:
-  Enabled: false
-Style/SingleLineMethods:
-  Enabled: false
-Style/CommentedKeyword:
+
+Layout/FirstHashElementIndentation:
+  # This one in particular forbids what Emacs does by default for multi-line
+  # hash entries
   Enabled: false
 
 Layout/HashAlignment:
   EnforcedHashRocketStyle:
-    - table
-    - key
+  - table
+  - key
   EnforcedColonStyle:
-    - table
-    - key
+  - table
+  - key
 
-Style/ClassVars:
-  # Class vars are usually bad practice. Not universally.
+Layout/LineLength:
+  # Max: 100
+  Enabled: false # Potentially bring this back later
+
+Layout/MultilineHashBraceLayout:
+  Enabled: false
+
+Layout/MultilineMethodCallBraceLayout:
+  # Rules for formatting hash and method call braces: let's avoid these unless we
+  # can find something unambiguously positive.
+  Enabled: false
+
+Layout/MultilineMethodCallIndentation:
+  # Cannot be configured to indent relative to expression.
   Enabled: false
 
 Layout/MultilineMethodDefinitionBraceLayout:
   # None of their options are lovely
   Enabled: false
 
-Style/StringLiterals:
-  Enabled: true
-Style/StringLiteralsInInterpolation:
-  Enabled: true
+Layout/SpaceInsideRangeLiteral:
+  Enabled: false
 
 Lint/AmbiguousBlockAssociation:
   # In practise this rule seems overly restrictive for
   # DSLs like RSpec that avoid parens.
   Enabled: false
 
+Lint/EmptyWhen:
+  Enabled: false
+
+Lint/ParenthesesAsGroupedExpression:
+  Enabled: false
+
+Lint/RaiseException:
+  Enabled: true
+
 Lint/ShadowingOuterLocalVariable:
   # I like this rule, but can see arguments against it
   Enabled: true
 
-# Rules for formatting hash and method call braces: let's avoid these unless we
-# can find something unambiguously positive.
-Layout/MultilineMethodCallBraceLayout:
+Lint/StructNewOverride:
   Enabled: false
-Layout/MultilineHashBraceLayout:
+
+Lint/UnusedBlockArgument:
+  AllowUnusedKeywordArguments: true
+
+Lint/UnusedMethodArgument:
+  AllowUnusedKeywordArguments: true
+  IgnoreEmptyMethods: true
+
+Metrics/AbcSize:
   Enabled: false
-Layout/FirstHashElementIndentation:
-  # This one in particular forbids what Emacs does by default for multi-line
-  # hash entries
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/ModuleLength:
+  Enabled: false
+
+Metrics/ParameterLists:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Naming/AccessorMethodName:
+  Enabled: false
+
+Naming/MethodParameterName:
+  Enabled: false
+
+Naming/PredicateName:
+  NamePrefix: [is_]
+
+Naming/RescuedExceptionsVariableName:
+  Enabled: false
+
+Naming/VariableNumber:
+  Enabled: false
+
+Style/AccessorGrouping:
+  Enabled: false
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/BlockDelimiters:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/ClassVars:
+  # Class vars are usually bad practice. Not universally.
+  Enabled: false
+
+Style/CommentedKeyword:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/EmptyCaseCondition:
+  Enabled: false
+
+Style/EmptyElse:
+  Enabled: false
+
+Style/ExplicitBlockArgument:
+  # This goes too far by demanding expensive block allocation always
+  Enabled: false
+
+Style/GuardClause:
+  # This is too prescriptive
+  Enabled: false
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashSyntax:
+  # We explicitly choose to use rocket style syntax when the Hash is being used
+  # to represent some other sort of data structure (trees, pairs, etc).
+  Enabled: false
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/KeywordParametersOrder:
+  Enabled: false
+
+Style/Lambda:
+  Enabled: true
+  EnforcedStyle: literal
+
+Style/LambdaCall:
+  # restricts foo.() syntax, which we favour
+  Enabled: false
+
+Style/MultilineBlockChain:
+  Enabled: false
+
+Style/NonNilCheck:
+  Enabled: false
+
+Style/NumericLiterals:
+  Enabled: false
+
+Style/NumericPredicate:
+  Enabled: false
+
+Style/PreferredHashMethods:
+  EnforcedStyle: verbose
+
+Style/RaiseArgs:
+  EnforcedStyle: compact
+
+Style/RedundantCondition:
+  Enabled: false
+
+Style/RedundantException:
+  Enabled: false
+
+Style/RedundantReturn:
+  # allow redundant return keyword where appropriate to convey meaning
+  Enabled: false
+
+Style/RedundantSelf:
+  # allow redundant self keyword where appropriate to convey meaning
+  Enabled: false
+
+Style/RescueModifier:
+  # I can see valid uses for this but they're far and few between.
+  # That said, nobody in our team is going to use one of these unless
+  # it's a valid case
+  Enabled: false
+
+Style/SafeNavigation:
+  Enabled: false
+
+Style/SingleLineMethods:
+  Enabled: false
+
+Style/SpecialGlobalVars:
+  Enabled: false
+
+Style/StringConcatenation:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: true
+
+Style/StringLiteralsInInterpolation:
+  Enabled: true
+
+Style/SymbolArray:
+  Enabled: false
+
+Style/SymbolLiteral:
+  Enabled: false
+
+Style/SymbolProc:
+  Enabled: false
+
+Style/TernaryParentheses:
+  Enabled: true
+  EnforcedStyle: require_parentheses_when_complex
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingUnderscoreVariable:
+  # I think this does more harm than good by hiding the array destructuring
+  Enabled: false
+
+Style/WhileUntilModifier:
+  Enabled: false
+
+Style/WordArray:
   Enabled: false
