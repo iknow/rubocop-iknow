@@ -2,6 +2,9 @@ AllCops:
   TargetRubyVersion: 2.5
   NewCops: enable
 
+Layout/EmptyLineAfterMagicComment:
+  Severity: error
+
 Layout/EmptyLinesAroundExceptionHandlingKeywords:
   Enabled: false
 
@@ -44,6 +47,9 @@ Layout/MultilineMethodDefinitionBraceLayout:
 
 Layout/SpaceInsideRangeLiteral:
   Enabled: false
+
+Layout/TrailingWhitespace:
+  Severity: error
 
 Lint/AmbiguousBlockAssociation:
   # In practise this rule seems overly restrictive for
@@ -144,6 +150,9 @@ Style/ExplicitBlockArgument:
   # This goes too far by demanding expensive block allocation always
   Enabled: false
 
+Style/FrozenStringLiteralComment:
+  Severity: error
+
 Style/GuardClause:
   # This is too prescriptive
   Enabled: false
@@ -178,6 +187,9 @@ Style/LambdaCall:
 
 Style/MultilineBlockChain:
   Enabled: false
+
+Style/MutableConstant:
+  Severity: error
 
 Style/NonNilCheck:
   Enabled: false
@@ -228,9 +240,11 @@ Style/StringConcatenation:
 
 Style/StringLiterals:
   Enabled: true
+  Severity: error
 
 Style/StringLiteralsInInterpolation:
   Enabled: true
+  Severity: error
 
 Style/SymbolArray:
   Enabled: false
@@ -246,12 +260,15 @@ Style/TernaryParentheses:
   EnforcedStyle: require_parentheses_when_complex
 
 Style/TrailingCommaInArguments:
+  Severity: error
   EnforcedStyleForMultiline: comma
 
 Style/TrailingCommaInArrayLiteral:
+  Severity: error
   EnforcedStyleForMultiline: consistent_comma
 
 Style/TrailingCommaInHashLiteral:
+  Severity: error
   EnforcedStyleForMultiline: comma
 
 Style/TrailingUnderscoreVariable:
