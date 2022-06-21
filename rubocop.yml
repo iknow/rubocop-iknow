@@ -169,7 +169,9 @@ Style/HashEachMethods:
 Style/HashSyntax:
   # We explicitly choose to use rocket style syntax when the Hash is being used
   # to represent some other sort of data structure (trees, pairs, etc).
-  Enabled: false
+  Enabled: true
+  EnforcedStyle: no_mixed_keys
+  EnforcedShorthandSyntax: always
 
 Style/HashTransformKeys:
   Enabled: true
