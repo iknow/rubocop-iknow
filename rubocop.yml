@@ -59,6 +59,9 @@ Lint/AmbiguousBlockAssociation:
 Lint/EmptyWhen:
   Enabled: false
 
+Lint/MissingSuper:
+  Severity: error
+
 Lint/ParenthesesAsGroupedExpression:
   Enabled: false
 
