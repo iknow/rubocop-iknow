@@ -48,6 +48,9 @@ Layout/MultilineMethodDefinitionBraceLayout:
 Layout/SpaceInsideRangeLiteral:
   Enabled: false
 
+Layout/TrailingEmptyLines:
+  Severity: error
+
 Layout/TrailingWhitespace:
   Severity: error
 
