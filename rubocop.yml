@@ -116,7 +116,8 @@ Naming/MethodParameterName:
   Enabled: false
 
 Naming/PredicateName:
-  NamePrefix: [is_]
+  NamePrefix: [is_, have_]
+  ForbiddenPrefixes: [is_, have_]
 
 Naming/RescuedExceptionsVariableName:
   Enabled: false
